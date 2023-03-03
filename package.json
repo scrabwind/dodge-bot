@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start:dev": "nodemon",
-    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/api/index.js",
     "build": "tsc --build"
   },
   "devDependencies": {
