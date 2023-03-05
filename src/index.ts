@@ -4,6 +4,8 @@ import { ready } from './listeners/ready.js'
 
 console.log(Object.keys(process?.env))
 
+console.log('xdd')
+
 dotenv.config()
 // Create a new client instance
 import { Client } from 'discord.js'
