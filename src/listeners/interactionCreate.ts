@@ -1,5 +1,6 @@
 import { CommandInteraction, Client, Interaction } from 'discord.js'
 import commands from '../commands/index.js'
+import { changeAvatarOnDodge } from '../helpers/changeAvatars.js'
 
 let isKamilDodge = false
 
@@ -14,6 +15,7 @@ export const InteractionCreate = (client: Client): void => {
     }
 
     if (interaction.isButton() && interaction.customId === 'dodge') {
+      await changeAvatarOnDodge(client, isKamilDodge)
       await interaction.update({
         content: `Teraz **${isKamilDodge ? 'Kamil' : 'FCOS'}** dodguje`,
       })
