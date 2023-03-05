@@ -15,6 +15,7 @@ export const InteractionCreate = (client: Client): void => {
     }
 
     if (interaction.isButton() && interaction.customId === 'dodge') {
+      console.info(interaction.user.username)
       await changeAvatarOnDodge(client, isKamilDodge)
       await interaction.update({
         content: `Teraz **${isKamilDodge ? 'Kamil' : 'FCOS'}** dodguje`,
