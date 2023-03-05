@@ -2,9 +2,7 @@ import dotenv from 'dotenv-safe'
 import { InteractionCreate } from './listeners/interactionCreate.js'
 import { ready } from './listeners/ready.js'
 
-if (process.env.NODE_ENV === 'development') {
-  dotenv.config()
-}
+dotenv.config()
 // Create a new client instance
 import { Client } from 'discord.js'
 
