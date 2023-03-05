@@ -2,7 +2,9 @@ import dotenv from 'dotenv-safe'
 import { InteractionCreate } from './listeners/interactionCreate.js'
 import { ready } from './listeners/ready.js'
 
-dotenv.config({ allowEmptyValues: true })
+if (!process.env.CI) {
+  dotenv.config()
+}
 // Create a new client instance
 import { Client } from 'discord.js'
 
