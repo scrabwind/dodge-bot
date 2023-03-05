@@ -4,9 +4,6 @@ import { ready } from './listeners/ready.js'
 
 console.log(Object.keys(process?.env))
 
-if (process.env.NODE_ENV === 'development') {
-  dotenv.config()
-}
 // Create a new client instance
 import { Client } from 'discord.js'
 
