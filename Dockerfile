@@ -33,5 +33,6 @@ WORKDIR /app
 ENV NODE_ENV production
 ENV PATH /root/.volta/bin:$PATH
 ENV DISCORD_TOKEN ${DISCORD_TOKEN}
+ENV TEST testing
 
 CMD [ "npm", "run", "start" ]
