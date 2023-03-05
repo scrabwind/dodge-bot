@@ -7,7 +7,6 @@ processes = []
 
 [env]
   PORT = "8080"
-  DISCORD_TOKEN = "MTA4MDk0NzEwMjEzNTM1NzQ5MA.GwWARt.YtkjNYyu5hh2dAOT8lD9DBUEKLEeHMTM58lyfI"
 
 [experimental]
   auto_rollback = true
