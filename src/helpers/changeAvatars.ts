@@ -13,7 +13,7 @@ export const changeAvatarOnDodge = async (
       return
     }
     await client.user?.setAvatar(
-      `${fileURLToPath(new URL('.', import.meta.url))}/../img/madgeMad.jpg`
+      `${fileURLToPath(new URL('.', import.meta.url))}/../img/madgeMad.webp`
     )
   } catch (error) {
     console.error(error)
