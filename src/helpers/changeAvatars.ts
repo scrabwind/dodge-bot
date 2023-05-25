@@ -5,6 +5,7 @@ export const changeAvatarOnDodge = async (
   client: Client,
   isKamilDodge: boolean
 ): Promise<void> => {
+  if (process.env.NODE_ENV === 'development') return
   try {
     if (isKamilDodge) {
       await client.user?.setAvatar(
