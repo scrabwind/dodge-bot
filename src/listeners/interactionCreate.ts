@@ -22,7 +22,7 @@ export const InteractionCreate = (client: Client): void => {
         interaction.user.username
       }`
       console.info(msg)
-      await writeFile(dest, msg, { mode: 'a+' })
+      await writeFile(dest, msg, { flag: 'a+' })
       await changeAvatarOnDodge(client, isKamilDodge)
       await interaction.update({
         content: `Teraz **${isKamilDodge ? 'Kamil' : 'FCOS'}** dodguje`,
