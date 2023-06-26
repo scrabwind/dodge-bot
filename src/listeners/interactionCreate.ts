@@ -18,9 +18,9 @@ export const InteractionCreate = (client: Client): void => {
 
     if (interaction.isButton() && interaction.customId === 'dodge') {
       const dest = platform === 'win32' ? './logs.txt' : '/data/logs.txt'
-      const msg = `${Date.now()} | Dodge button was clicked by: ${
+      const msg = `${new Date()} | Dodge button was clicked by: ${
         interaction.user.username
-      }`
+      }\n`
       console.info(msg)
       await writeFile(dest, msg, { flag: 'a+' })
       await changeAvatarOnDodge(client, isKamilDodge)
